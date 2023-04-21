@@ -24,7 +24,7 @@ controllo:  bge $t0, '0', num			#numero
 			syscall
 			j lettura
 
-num:		slt $t1, $t0, '9'
+num:		slt $t1, $t0, ':'
 			beq $t1, 1, lettura
 			li $v0, 4
 			la $a0, notn
